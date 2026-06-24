@@ -2,7 +2,7 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
-const port = 4000;
+//const port = 4000;
 
 const gitHubData = {
   login: "hiteshchoudhary",
@@ -53,7 +53,7 @@ app.get("/twitter", (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-  console.log(`example app listening on port ${port}`);
+  console.log(`example app listening on port`);
 });
 
 app.get("/github", (req, res) => {
